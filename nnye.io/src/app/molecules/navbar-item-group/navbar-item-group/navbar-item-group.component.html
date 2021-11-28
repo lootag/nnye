@@ -1,0 +1,16 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">{{headline}}</a>
+    <!--button class="navbar-toggler" style="position: fixed; right: 5%"type="button"
+        data-toggle="collapse" data-target="#navbarColor01"
+        aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button-->
+    <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav mr-auto">
+            <ng-container *ngFor="let item of items">
+                <app-navbar-item [item]="item"></app-navbar-item>
+            </ng-container>
+        </ul>
+    </div>
+</nav>
+
