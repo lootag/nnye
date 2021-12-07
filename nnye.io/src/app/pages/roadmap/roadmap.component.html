@@ -1,0 +1,30 @@
+<div style="display: flex; flex-direction: column;">
+    <app-header></app-header>
+</div>
+<ion-content>
+    <ion-slides #slides>
+        <ion-slide>
+            <div style="display: flex; justify-content: center; align-content: center; flex-direction: column;">
+                <h3>Slide1</h3>
+                <p>Slide text</p>
+            </div>
+        </ion-slide>
+        <ion-slide>
+            <div style="display: flex; justify-content: center; align-content: center; flex-direction: column;">
+                <h3>Slide2</h3>
+                <p>Slide text</p>
+            </div>
+        </ion-slide>
+        <ion-slide>
+            <div style="display: flex; justify-content: center; align-content: center; flex-direction: column;">
+                <h3>Slide3</h3>
+                <p>Slide text</p>
+            </div>
+        </ion-slide>
+    </ion-slides>
+    <div style="display: flex; justify-content: space-between; align-items: center; height: 100vh;">
+        <ion-button (click)="slides.slidePrev()">Prev</ion-button>
+        <ion-button (click)="slides.slideNext()">Next</ion-button>
+    </div>
+</ion-content>
+
